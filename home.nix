@@ -22,6 +22,7 @@ in
     [
       ./modules/zsh.nix
       ./modules/suckless.nix
+
     ];
 
 
@@ -79,6 +80,7 @@ in
       ];
       text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
     })
+    fastfetch
     neovim
     ripgrep
     nil
