@@ -24,6 +24,7 @@ in
       core.editor = "nvim";
     };
   };
+  services.picom.enable = true;
 
   programs.gh = {
     enable = true;
