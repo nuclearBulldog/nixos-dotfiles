@@ -15,9 +15,9 @@
 
     ''
     ];
+    theme = "powerlevel10k/powerlevel10k";
     antidote = {
       enable = true;
-      theme = "powerlevel10k/powerlevel10k";
       plugins = [
         ''
           zsh-users/zsh-syntax-highlighting
