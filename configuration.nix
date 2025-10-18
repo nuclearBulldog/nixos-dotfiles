@@ -17,7 +17,6 @@
       efiSupport = true;
       useOSProber = false;
       devices = [ "nodev" ];
-      version = 2;
     };
   };
 
