@@ -22,15 +22,7 @@ in
     userEmail = "dellowcaleb@outlook.com";
     extraConfig = {
       core.editor = "nvim";
-
     };
-  };
-  programs.zsh = {
-    enable = true;
-    zplug.enable = true;
-    #    zplug.plugins = [
-    #    ];
-
   };
 
   programs.gh = {
@@ -44,9 +36,13 @@ in
     enable = true;
     shellAliases = {
       cls = "clear";
-      v = "vim";
+      v = "nvim";
       btw = "echo i use LOOnix btw";
-      update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#cdell";
+      nix-update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#cdell";
+      nix-config = "nvim ~/nixos-dotfiles/configuration.nix";
+      nix-home-config = "nvim ~/nixos-dotfiles/home.nix";
+      nix-commit-dots = "cd ~/nixos-dotfiles && git add . && git commit -m 'Automated commit'";
+
     };
   };
 
