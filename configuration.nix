@@ -40,7 +40,7 @@
       };
     };
     displayManager.sessionCommands = ''
-      feh --bg-fill --randomize ~/nixos-dotfiles/wallpapers/* & picom -b
+      feh --bg-fill --randomize ~/nixos-dotfiles/wallpapers/*
     '';
   };
 
