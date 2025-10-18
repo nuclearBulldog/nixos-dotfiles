@@ -3,11 +3,11 @@
 {
 
   home.packages = with pkgs; [
-    (pkgs.st.overrideAattrs (_: {
+    (pkgs.st.overrideAttrs (_: {
       src = ../config/st;
       patches = [ ];
     }))
-    (pkgs.dmenu.overrideAattrs (_: {
+    (pkgs.dmenu.overrideAttrs (_: {
       src = ../config/dmenu-flexipatch;
       patches = [ ];
     }))
