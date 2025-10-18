@@ -51,7 +51,7 @@
 
   # Sound
 
-  hardware.pulseaudio.enable = true;
+  services.pulseaudio.enable = true;
   security.rtkit.enable = true;
 
   services.pipewire = {
@@ -62,9 +62,7 @@
   };
 
   # Disable bluetooth, enable pulseaudio, enable opengl (for Wayland)
-  hardware = {
-    bluetooth.enable = false;
-  };
+  hardware.bluetooth.enable = false;
 
   users.users.caleb = {
     isNormalUser = true;

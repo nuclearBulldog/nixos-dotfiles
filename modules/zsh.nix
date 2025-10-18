@@ -15,7 +15,7 @@
       nix-push-dots = "cd ~/nixos-dotfiles && git push origin";
     };
 
-    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
+    initContent = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     antidote = {
       enable = true;
       plugins = [
