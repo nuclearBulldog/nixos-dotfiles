@@ -1,9 +1,19 @@
 { pkgs, ... }:
 {
-  home.packages = with pkgs; [
-    (pkgs.zsh.overrideAttrs (_: {
-      src = ../config/zsh;
-    }))
-    antigen
-  ];
+  programs.zsh = {
+    enable = true;
+    enableCompletion = true;
+    autosuggestion.enable = true;
+    syntaxHighlighting.enable = true;
+    shellAliases = { };
+    antidote = {
+      enable = true;
+      plugins = [
+        ''
+          zsh-users/zsh-autosuggestions
+          ohmyzsh/ohmyzsh path:lib/git.zsh
+        ''
+      ];
+    };
+  };
 }
