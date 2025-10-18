@@ -40,6 +40,9 @@
         src = ./config/dwm;
       };
     };
+    displayManager.sessionCommands = ''
+      xwallpaper --zoom ~/nixos-dotfiles/wallpapers/*
+    '';
   };
 
   services.picom.enable = true;
