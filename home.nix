@@ -9,7 +9,7 @@ let
     rofi = "rofi";
     picom = "picom";
     dwm = "dwm";
-    dmenu-flexipatch = "dmenu-flexipatch";
+    dmenu = "dmenu";
     dwmblocks-async = "dwmblocks-async";
     slock = "slock";
     st = "st";
@@ -79,10 +79,6 @@ in
     git-credential-manager
     unzip
     feh
-    dmenu
-    dwmblocks
-    st
-    slock
   ];
 }
 
