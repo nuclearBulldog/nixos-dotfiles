@@ -13,11 +13,8 @@
 
 
   # Set up only essential programs here
-  programs.zsh.enable = true;
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
-    acpi
-    tlp
     git
     wget
     alacritty
@@ -26,21 +23,13 @@
   ];
 
   # Install fonts
-  fonts = {
-    fonts = with pkgs; [
-      nerd-fonts.jetbrains-mono
-    ];
 
-  };
+  fonts.packages = with pkgs; [
+    nerd-fonts.jetbrains-mono
+  ];
 
   nix = {
     settings.auto-optimise-store = true;
-    settings.allowed-users = [ "caleb" ];
-    gc = {
-      automatic = true;
-      dates = "weekly";
-      options = "--delete-older-than 7d";
-    };
     extraOptions = {
       experimental-features = [ "nix-command" "flakes" ];
     };
