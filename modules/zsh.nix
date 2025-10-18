@@ -13,7 +13,6 @@
           zsh-users/zsh-syntax-highlighting
           zsh-users/zsh-autosuggestions
           zsh-users/zsh-completions
-          casonadams/alacritty-shell
           raisty/alt-and-select
           Sam-programs/zsh-calc
           GeoLMg/apt-zsh-plugin
