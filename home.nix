@@ -20,6 +20,7 @@ in
 
   imports =
     [
+      ./modules/zsh.nix
       ./modules/suckless.nix
     ];
 
