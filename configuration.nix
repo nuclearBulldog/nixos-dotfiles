@@ -34,6 +34,12 @@
     autoRepeatDelay = 200;
     autoRepeatInterval = 35;
     windowManager.qtile.enable = true;
+    windowManager.dwm = {
+      enable = true;
+      package = pkgs.dwm.overrideAttrs {
+        src = ./config/dwm;
+      };
+    };
   };
   services.displayManager.ly.enable = true;
 
