@@ -60,7 +60,7 @@
     wget
     alacritty
     gcc
-    make
+    gnumake
   ];
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
