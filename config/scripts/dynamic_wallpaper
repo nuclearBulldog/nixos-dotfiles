@@ -1,0 +1,9 @@
+#!/usr/bin/env zsh
+
+
+wallpaperdir='/home/caleb/Pictures/wallpaper'
+pkill picom
+wallpapermenu $wallpaperdir
+pywal16
+picom -b
+
