@@ -13,6 +13,7 @@ let
     dwmblocks-async = "dwmblocks-async";
     slock = "slock";
     st = "st";
+    zsh = "zsh";
   };
 in
 
