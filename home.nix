@@ -20,6 +20,7 @@ in
 
   imports =
     [
+      ./modules/theme.nix
       ./modules/suckless.nix
     ];
 

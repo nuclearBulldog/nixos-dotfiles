@@ -11,7 +11,14 @@
       src = ../config/dmenu;
       patches = [ ];
     }))
-    slock
+    (pkgs.slock.overrideAttrs (_: {
+      src = ../config/slock;
+      patches = [ ];
+    }))
+    (pkgs.dwmblocks.overrideAttrs (_: {
+      src = ../config/dwmblocks-async;
+      patches = [ ];
+    }))
     surf
   ];
 
