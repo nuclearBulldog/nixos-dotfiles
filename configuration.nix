@@ -104,12 +104,10 @@
   # Stay Away From this !
 
 
-  nix = {
-    settings.auto-optimise-store = true;
+  nix.settings.auto-optimise-store = true;
 
-    settngs.experimental-features = [ "nix-command" "flakes" ];
+  nix.settngs.experimental-features = [ "nix-command" "flakes" ];
 
-  };
 
   # And This !
 
