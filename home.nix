@@ -17,6 +17,13 @@ let
 in
 
 {
+
+  imports =
+    [
+      ./modules/suckless.nix
+    ];
+
+
   home.username = "caleb";
   home.homeDirectory = "/home/caleb";
   home.stateVersion = "25.05";
