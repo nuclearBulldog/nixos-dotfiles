@@ -15,6 +15,7 @@
   # Set up only essential programs here
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
+    zsh-powerlevel10k
     git
     wget
     alacritty
