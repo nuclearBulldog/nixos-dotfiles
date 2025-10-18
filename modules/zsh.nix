@@ -5,16 +5,7 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    shellAliases = [
-      '' 
-      alias cls="clear"
-      alias v="nvim"
-      alias sv="sudoedit"
-      alias e="emacs"
-      alias ff="fastfetch"
-
-    ''
-    ];
+    shellAliases = { };
     antidote = {
       enable = true;
       plugins = [
