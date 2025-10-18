@@ -105,9 +105,7 @@
 
 
   nix.settings.auto-optimise-store = true;
-
-  nix.settngs.experimental-features = [ "nix-command" "flakes" ];
-
+  nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # And This !
 
