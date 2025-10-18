@@ -54,6 +54,7 @@ in
       nix-config = "nvim ~/nixos-dotfiles/configuration.nix";
       nix-home-config = "nvim ~/nixos-dotfiles/home.nix";
       nix-commit-dots = "cd ~/nixos-dotfiles && git add . && git commit -m 'Automated commit'";
+      nix-push-dots = "cd ~/nixos-dotfiles && git push origin";
     };
     initExtra = ''
       export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"

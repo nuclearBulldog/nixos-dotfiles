@@ -5,7 +5,17 @@
     enableCompletion = true;
     autosuggestion.enable = true;
     syntaxHighlighting.enable = true;
-    shellAliases = { };
+    shellAliases = {
+      cls = "clear";
+      v = "nvim";
+      nix-update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#cdell";
+      nix-config = "nvim ~/nixos-dotfiles/configuration.nix";
+      nix-home-config = "nvim ~/nixos-dotfiles/home.nix";
+      nix-commit-dots = "cd ~/nixos-dotfiles && git add . && git commit -m 'Automated commit'";
+      nix-push-dots = "cd ~/nixos-dotfiles && git push origin";
+    };
+
+    promptInit = "source ${pkgs.zsh-powerlevel10k}/share/zsh-powerlevel10k/powerlevel10k.zsh-theme";
     antidote = {
       enable = true;
       plugins = [
