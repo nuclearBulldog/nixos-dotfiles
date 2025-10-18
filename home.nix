@@ -24,7 +24,6 @@ in
       core.editor = "nvim";
     };
   };
-  services.picom.enable = true;
 
   programs.gh = {
     enable = true;
@@ -66,7 +65,6 @@ in
     nodejs
     gcc
     rofi
-    picom
     git-credential-manager
     unzip
     feh
