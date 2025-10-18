@@ -78,9 +78,6 @@
   services.displayManager.ly.enable = true;
 
   # Sound
-  sound = {
-    enable = true;
-  };
 
   hardware.pulseaudio.enable = true;
   security.rtkit.enable = true;
