@@ -8,6 +8,7 @@ let
     nvim = "nvim";
     rofi = "rofi";
     picom = "picom";
+    dwm = "dwm";
   };
 in
 

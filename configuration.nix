@@ -41,6 +41,8 @@
       };
     };
   };
+
+  services.picom.enable = true;
   services.displayManager.ly.enable = true;
 
   users.users.caleb = {
