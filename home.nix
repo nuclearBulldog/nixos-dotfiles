@@ -7,6 +7,7 @@ let
     qtile = "qtile";
     nvim = "nvim";
     rofi = "rofi";
+    picom = "picom";
   };
 in
 
@@ -64,6 +65,7 @@ in
     nodejs
     gcc
     rofi
+    picom
     git-credential-manager
     unzip
   ];
