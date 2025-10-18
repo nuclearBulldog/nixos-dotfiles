@@ -20,7 +20,6 @@ in
 
   imports =
     [
-      ./modules/theme.nix
       ./modules/suckless.nix
     ];
 
@@ -70,6 +69,14 @@ in
 
 
   home.packages = with pkgs; [
+    (pkgs.writeShellApplication {
+      name = "ns";
+      runtimeInputs = with pkgs; [
+        fzf
+        nix-search-tv
+      ];
+      text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    })
     neovim
     ripgrep
     nil
