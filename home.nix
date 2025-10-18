@@ -26,10 +26,8 @@ in
   programs.zsh = {
     enable = true;
     zplug.enable = true;
-    zplug.plugins = [
-      { src = "zsh-users/zsh-syntax-highlighting"; use = "zsh-syntax-highlighting.zsh"; }
-      { src = "zsh-users/zsh-history-substring-search"; }
-    ];
+    #    zplug.plugins = [
+    #    ];
 
   };
 
