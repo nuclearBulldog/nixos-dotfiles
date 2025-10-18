@@ -7,7 +7,6 @@ let
     qtile = "qtile";
     nvim = "nvim";
     rofi = "rofi";
-    zsh = "zsh";
   };
 in
 
@@ -15,9 +14,6 @@ in
   home.username = "caleb";
   home.homeDirectory = "/home/caleb";
   home.stateVersion = "25.05";
-  programs.zsh = {
-    enable = true;
-  };
   programs.git = {
     enable = true; # Enables Git configuration through Home Manager
     userName = "nuclearBulldog";
@@ -26,6 +22,17 @@ in
       core.editor = "nvim";
 
     };
+  };
+  programs.zsh = {
+    enable = true;
+    zplug.enable = true;
+    zplug.plugins = [
+      { src = "unixorn/autoupdate-zsh-plugin"; }
+      { src = "zsh-users/zsh-syntax-highlighting"; use = "zsh-syntax-highlighting.zsh"; }
+      { src = "zsh-users/zsh-history-substring-search"; }
+      { src = "plugins/git"; }
+    ];
+
   };
 
   programs.gh = {
