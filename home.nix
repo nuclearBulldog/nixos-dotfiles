@@ -27,10 +27,8 @@ in
     enable = true;
     zplug.enable = true;
     zplug.plugins = [
-      { src = "unixorn/autoupdate-zsh-plugin"; }
       { src = "zsh-users/zsh-syntax-highlighting"; use = "zsh-syntax-highlighting.zsh"; }
       { src = "zsh-users/zsh-history-substring-search"; }
-      { src = "plugins/git"; }
     ];
 
   };
