@@ -68,7 +68,7 @@ in
     picom
     git-credential-manager
     unzip
-    xwallpaper
+    feh
   ];
 }
 

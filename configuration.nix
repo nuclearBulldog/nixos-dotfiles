@@ -41,7 +41,7 @@
       };
     };
     displayManager.sessionCommands = ''
-      xwallpaper --zoom ~/nixos-dotfiles/wallpapers/*
+      feh --bg-fill --randomize ~/nixos-dotfiles/wallpapers/*
     '';
   };
 
