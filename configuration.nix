@@ -29,7 +29,6 @@
   fonts = {
     fonts = with pkgs; [
       nerd-fonts.jetbrains-mono
-      nerd-fonts.roboto
       nerd-fonts.openmoji-color
     ];
 
