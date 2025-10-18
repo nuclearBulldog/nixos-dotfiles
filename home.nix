@@ -72,6 +72,10 @@ in
     git-credential-manager
     unzip
     feh
+    dmenu
+    dwmblocks
+    st
+    slock
   ];
 }
 
