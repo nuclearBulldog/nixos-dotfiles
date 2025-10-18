@@ -15,7 +15,6 @@
 
     ''
     ];
-    theme = "powerlevel10k/powerlevel10k";
     antidote = {
       enable = true;
       plugins = [
