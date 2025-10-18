@@ -29,15 +29,8 @@
   fonts = {
     fonts = with pkgs; [
       nerd-fonts.jetbrains-mono
-      nerd-fonts.openmoji-color
     ];
 
-    fontconfig = {
-      hinting.autohint = true;
-      defaultFonts = {
-        emoji = [ "OpenMoji Color" ];
-      };
-    };
   };
 
   nix = {
