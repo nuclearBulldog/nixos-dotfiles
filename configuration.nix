@@ -28,13 +28,6 @@
     nerd-fonts.jetbrains-mono
   ];
 
-  nix = {
-    settings.auto-optimise-store = true;
-    extraOptions = {
-      experimental-features = [ "nix-command" "flakes" ];
-    };
-  };
-
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
   services.xserver = {
@@ -109,6 +102,17 @@
   };
 
   # Stay Away From this !
+
+
+  nix = {
+    settings.auto-optimise-store = true;
+
+    settngs.experimental-features = [ "nix-command" "flakes" ];
+
+  };
+
+  # And This !
+
   # DO NOT DELETE THIS
   system.stateVersion = "25.05";
   # Did you read the comment?
