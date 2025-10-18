@@ -28,9 +28,9 @@
   # Install fonts
   fonts = {
     fonts = with pkgs; [
-      nerdfonts.jetbrains-mono
-      roboto
-      openmoji-color
+      nerd-fonts.jetbrains-mono
+      nerd-fonts.roboto
+      nerd-fonts.openmoji-color
     ];
 
     fontconfig = {
