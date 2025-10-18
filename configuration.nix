@@ -92,10 +92,6 @@
   # Disable bluetooth, enable pulseaudio, enable opengl (for Wayland)
   hardware = {
     bluetooth.enable = false;
-    opengl = {
-      enable = true;
-      driSupport = true;
-    };
   };
 
   users.users.caleb = {
