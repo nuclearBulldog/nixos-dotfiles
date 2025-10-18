@@ -18,9 +18,6 @@
           aemonge/zsh-hookie-projects
           chrissicool/zsh-256color
           z-shell/zsh-fancy-completions
-          ohmyzsh/ohmyzsh path:lib/git.zsh
-          ohmyzsh/ohmyzsh path:lib/pip.zsh
-          ohmyzsh/ohmyzsh path:lib/command-not-found.zsh     
         ''
       ];
     };
