@@ -41,11 +41,9 @@
       dates = "weekly";
       options = "--delete-older-than 7d";
     };
-    extraOptions = ''
-      experimental-features = nix-command flakes
-      keep-outputs = true
-      keep-derivations = true
-    '';
+    extraOptions = {
+      experimental-features = [ "nix-command" "flakes" ];
+    };
   };
 
   boot.kernelPackages = pkgs.linuxPackages_latest;
