@@ -42,8 +42,6 @@
     displayManager.sessionCommands = ''
       feh --bg-fill --randomize ~/nixos-dotfiles/wallpapers/* & picom -b
     '';
-    videoDrivers = [ "modesetting" ];
-    services.libinput.enable = true;
   };
 
   services.picom.enable = true;
