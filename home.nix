@@ -9,6 +9,10 @@ let
     rofi = "rofi";
     picom = "picom";
     dwm = "dwm";
+    dmenu-flexipatch = "dmenu-flexipatch";
+    dwmblocks-async = "dwmblocks-async";
+    slock = "slock";
+    st = "st";
   };
 in
 
