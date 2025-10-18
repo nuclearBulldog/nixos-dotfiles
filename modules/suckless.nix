@@ -8,7 +8,7 @@
       patches = [ ];
     }))
     (pkgs.dmenu.overrideAttrs (_: {
-      src = ../config/dmenu-flexipatch;
+      src = ../config/dmenu;
       patches = [ ];
     }))
     slock
