@@ -22,7 +22,7 @@ in
     [
       ./modules/zsh.nix
       ./modules/suckless.nix
-
+      ./modules/packages.nix
     ];
 
   home.packages = with pkgs; [
@@ -34,19 +34,6 @@ in
       ];
       text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
     })
-    bat
-    tldr
-    fastfetch
-    neovim
-    ripgrep
-    nil
-    nixpkgs-fmt
-    nodejs
-    gcc
-    rofi
-    git-credential-manager
-    unzip
-    feh
   ];
 
   home.username = "caleb";

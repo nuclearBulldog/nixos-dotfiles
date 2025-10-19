@@ -1,22 +1,27 @@
-#{ pkgs, inputs, ... }:
+{ pkgs, inputs, ... }:
 
-#let
-#  inherit (builtins) attrValues;
-#in
+let
+  inherit (builtins) attrValues;
+in
 
-#{
-#  environment.systemPackages = attrValues {
-#    inherit
-#      (pkgs)
-#      libreoffice-fresh
-#      clang
-#      gnumake
-#      cargo
-#      go
-#     gcc
-#      onefetch
-#      cpufetch
-#      microfetch
-#      ;
-#  };
-#}
+{
+  home.packages = attrValues {
+    inherit
+      (pkgs)
+      libreoffice-fresh
+      bat
+      tldr
+      fastfetch
+      neovim
+      ripgrep
+      nil
+      nixpkgs-fmt
+      nodejs
+      gcc
+      rofi
+      git-credential-manager
+      unzip
+      feh
+      ;
+  };
+}
