@@ -15,7 +15,7 @@
   # Set up only essential programs here
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
-    zsh-powerlevel10k
+    bash
     git
     wget
     alacritty
@@ -103,7 +103,6 @@
   # Stay Away From this !
 
 
-  nix.settings.auto-optimise-store = true;
   nix.settings.experimental-features = [ "nix-command" "flakes" ];
 
   # And This !
