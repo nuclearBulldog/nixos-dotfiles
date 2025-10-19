@@ -24,8 +24,19 @@
 	thunar-media-tags-plugin
   ];
 
+  programs.hyprland = {
+    enable = true;
+    withUWSM = true;
+    xwayland.enable = true;
+  };
+
+
+
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
+    waybar
+    foot
+	kitty
     bash
     git
     wget

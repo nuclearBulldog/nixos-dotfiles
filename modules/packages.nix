@@ -9,7 +9,7 @@ in
     inherit
       (pkgs)
 	  qimgv
-      gimp
+      gimp3-with-plugins
       imagemagick
       libheif
       libreoffice-fresh

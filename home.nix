@@ -13,6 +13,9 @@ let
     dwmblocks-async = "dwmblocks-async";
     slock = "slock";
     st = "st";
+    hypr = "hypr";
+    waybar = "waybar";
+    foot = "foot";
   };
 in
 
@@ -70,7 +73,11 @@ in
     initExtra = ''
       export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"
     '';
-
+    profileExtra = ''
+      if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
+        exec uwsm start -S hyprland-uwsm.desktop
+      fi
+    '';
   };
 
   xdg.configFile = builtins.mapAttrs
