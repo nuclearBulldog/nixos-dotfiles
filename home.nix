@@ -25,6 +25,29 @@ in
 
     ];
 
+  home.packages = with pkgs; [
+    (pkgs.writeShellApplication {
+      name = "ns";
+      runtimeInputs = with pkgs; [
+        fzf
+        nix-search-tv
+      ];
+      text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
+    })
+    bat
+    tldr
+    fastfetch
+    neovim
+    ripgrep
+    nil
+    nixpkgs-fmt
+    nodejs
+    gcc
+    rofi
+    git-credential-manager
+    unzip
+    feh
+  ];
 
   home.username = "caleb";
   home.homeDirectory = "/home/caleb";
@@ -70,27 +93,5 @@ in
     })
     configs;
 
-
-  home.packages = with pkgs; [
-    (pkgs.writeShellApplication {
-      name = "ns";
-      runtimeInputs = with pkgs; [
-        fzf
-        nix-search-tv
-      ];
-      text = builtins.readFile "${pkgs.nix-search-tv.src}/nixpkgs.sh";
-    })
-    fastfetch
-    neovim
-    ripgrep
-    nil
-    nixpkgs-fmt
-    nodejs
-    gcc
-    rofi
-    git-credential-manager
-    unzip
-    feh
-  ];
 }
 
