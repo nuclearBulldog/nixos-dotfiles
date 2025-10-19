@@ -77,6 +77,10 @@ programs.dconf.enable = true;
         src = ./config/dwm;
       };
     };
+    desktopManager.cinnamon = {
+        enable = true;
+        #apps.enable = true;
+    };
     displayManager.sessionCommands = ''
       feh --bg-fill --randomize ~/nixos-dotfiles/wallpapers/*
     '';

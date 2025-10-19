@@ -8,6 +8,7 @@ in
   home.packages = attrValues {
     inherit
       (pkgs)
+      hyprpaper
       wofi
 	  qimgv
       gimp3-with-plugins
