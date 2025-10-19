@@ -74,7 +74,7 @@ in
       cls = "clear";
       v = "nvim";
       btw = "echo i use LOOnix btw";
-      nix-update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#cdell";
+      nix-update = "sudo nixos-rebuild switch --flake ~/nixos-dotfiles#cdell --impure";
       nix-config = "nvim ~/nixos-dotfiles/configuration.nix";
       nix-home-config = "nvim ~/nixos-dotfiles/home.nix";
       nix-commit-dots = "cd ~/nixos-dotfiles && git add . && git commit -m 'Automated commit'";
