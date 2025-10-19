@@ -8,6 +8,7 @@ in
   home.packages = attrValues {
     inherit
       (pkgs)
+      gimp
       imagemagick
       libheif
       libreoffice-fresh
