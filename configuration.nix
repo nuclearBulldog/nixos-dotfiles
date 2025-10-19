@@ -14,6 +14,16 @@
   nixpkgs.config.allowUnfree = true;
 
   # Set up only essential programs here
+  programs.thunar.enable = true;
+  programs.xfconf.enable = true;
+  services.gvfs.enable = true; # Mount, trash, and other functionalities
+  services.tumbler.enable = true; # Thumbnail support for images
+  programs.thunar.plugins = with pkgs.xfce; [
+    thunar-archive-plugin
+    thunar-volman
+	thunar-media-tags-plugin
+  ];
+
   programs.firefox.enable = true;
   environment.systemPackages = with pkgs; [
     bash
@@ -24,9 +34,20 @@
     gnumake
     jetbrains.webstorm
     jetbrains.jdk
+	xdg-utils
+	catppuccin-gtk
+	rose-pine-gtk-theme
+	whitesur-gtk-theme
+	tokyonight-gtk-theme
+	sierra-gtk-theme
+	lavanda-gtk-theme
+	paper-gtk-theme
+	qogir-theme
+	nightfox-gtk-theme
   ];
-
-  # Install fonts
+# add this after environment.systemPackages, otherwise it won't be found
+programs.dconf.enable = true;
+# Install fonts
 
   fonts.packages = with pkgs; [
     nerd-fonts.jetbrains-mono
