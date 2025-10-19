@@ -8,6 +8,7 @@ in
   home.packages = attrValues {
     inherit
       (pkgs)
+      libheif
       libreoffice-fresh
       bat
       tldr
