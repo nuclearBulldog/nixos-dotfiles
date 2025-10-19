@@ -8,6 +8,7 @@ in
   home.packages = attrValues {
     inherit
       (pkgs)
+      wofi
 	  qimgv
       gimp3-with-plugins
       imagemagick

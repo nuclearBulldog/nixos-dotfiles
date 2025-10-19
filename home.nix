@@ -23,6 +23,7 @@ in
 
   imports =
     [
+        ./modules/theme.nix
       ./modules/zsh.nix
       ./modules/suckless.nix
       ./modules/packages.nix
