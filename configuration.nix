@@ -11,6 +11,7 @@
   environment.defaultPackages = [ ];
   services.xserver.desktopManager.xterm.enable = false;
 
+  nixpkgs.config.allowUnfree = true;
 
   # Set up only essential programs here
   programs.firefox.enable = true;
@@ -21,6 +22,8 @@
     alacritty
     gcc
     gnumake
+    jetbrains.webstorm
+    jetbrains.jdk
   ];
 
   # Install fonts
@@ -78,7 +81,7 @@
 
     firewall = {
       enable = true;
-      allowedTCPPorts = [ 443 80 ];
+      allowedTCPPorts = [ 443 80 53317 ];
       allowedUDPPorts = [ 443 80 44857 ];
       allowPing = false;
     };

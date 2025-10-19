@@ -22,6 +22,7 @@ in
       git-credential-manager
       unzip
       feh
+      localsend
       ;
   };
 }
