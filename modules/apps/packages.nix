@@ -5,9 +5,11 @@ let
 in
 
 {
+
   home.packages = attrValues {
     inherit
       (pkgs)
+      firefox
       hyprpaper
       wofi
 	  qimgv

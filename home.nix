@@ -22,12 +22,8 @@ in
 
 {
 
-  imports =
-    [
-        ./modules/theme.nix
-      ./modules/zsh.nix
-      ./modules/suckless.nix
-      ./modules/packages.nix
+  imports = [
+        ./modules/modules.nix
     ];
 
   home.packages = with pkgs; [
@@ -74,8 +70,6 @@ in
     };
     initExtra = ''
       export PS1="\[\e[38;5;75m\]\u@\h \[\e[38;5;113m\]\w \[\e[38;5;189m\]\$ \[\e[0m\]"
-    '';
-    profileExtra = ''
       if [ -z "$WAYLAND_DISPLAY" ] && [ "$XDG_VTNR" = 1 ]; then
         exec uwsm start -S hyprland-uwsm.desktop
       fi
