@@ -9,6 +9,7 @@ in
     inherit
       (pkgs)
       hyprpaper
+      wireshark
       wofi
 	  qimgv
       gimp3-with-plugins
