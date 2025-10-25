@@ -10,9 +10,9 @@
   # Remove unecessary preinstalled packages
   environment.defaultPackages = [ ];
   services.xserver.desktopManager.xterm.enable = false;
-
+  virtualisation.waydroid.enable = true;
   nixpkgs.config.allowUnfree = true;
-
+  programs.adb.enable = true;
   # Set up only essential programs here
   programs.thunar.enable = true;
   programs.xfconf.enable = true;
@@ -105,7 +105,7 @@ programs.dconf.enable = true;
 
   users.users.caleb = {
     isNormalUser = true;
-    extraGroups = [ "input" "wheel" ];
+    extraGroups = [ "adbusers" "input" "wheel" ];
     packages = with pkgs; [
       tree
     ];
